@@ -11,6 +11,8 @@ namespace Orders.Schema
 
             Mutation = (OrdersMutation)provider.GetService(typeof(OrdersMutation)) ?? throw new InvalidOperationException();
 
+            Subscription = (OrdersSubscription)provider.GetService(typeof(OrdersSubscription)) ?? throw new InvalidOperationException();
+
             FieldMiddleware.Use(new InstrumentFieldsMiddleware());
         }
     }

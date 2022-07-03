@@ -6,7 +6,7 @@ namespace Orders.Schema
     {
         public OrderStatusesEnum()
         {
-            Name = "OrderStatuses";
+            Name = "OrderStatus";
             Add("CREATED", 2, "Order was created");
             Add("PROCESSING", 4, "Order is being processed");
             Add("COMPLETED", 8,  "Order is completed");

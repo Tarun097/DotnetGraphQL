@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GraphQL.MicrosoftDI" Version="5.3.0" />
+    <PackageReference Include="GraphQL.DataLoader" Version="5.3.1" />
+    <PackageReference Include="GraphQL.MicrosoftDI" Version="5.3.1" />
     <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="GraphQL.Server.Transports.Subscriptions.WebSockets" Version="6.1.0" />
     <PackageReference Include="GraphQL.Server.Ui.Playground" Version="6.1.0" />
-    <PackageReference Include="GraphQL.SystemTextJson" Version="5.3.0" />
+    <PackageReference Include="GraphQL.SystemTextJson" Version="5.3.1" />
   </ItemGroup>
 
   <ItemGroup>
