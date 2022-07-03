@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetGraphQL", "DotnetGraphQL\DotnetGraphQL.csproj", "{B0BA236D-414C-4F67-976E-3FA7D2967A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders\Orders.csproj", "{7B465EB3-523B-42F8-8314-4EFFF624DFF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0BA236D-414C-4F67-976E-3FA7D2967A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BA236D-414C-4F67-976E-3FA7D2967A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BA236D-414C-4F67-976E-3FA7D2967A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BA236D-414C-4F67-976E-3FA7D2967A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B465EB3-523B-42F8-8314-4EFFF624DFF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B465EB3-523B-42F8-8314-4EFFF624DFF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B465EB3-523B-42F8-8314-4EFFF624DFF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B465EB3-523B-42F8-8314-4EFFF624DFF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFF9B797-1E19-475C-9D8D-16993E3DCBBF}
+	EndGlobalSection
+EndGlobal
