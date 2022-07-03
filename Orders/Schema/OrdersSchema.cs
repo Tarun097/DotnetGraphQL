@@ -9,6 +9,8 @@ namespace Orders.Schema
         {
             Query = (OrdersQuery)provider.GetService(typeof(OrdersQuery)) ?? throw new InvalidOperationException();
 
+            Mutation = (OrdersMutation)provider.GetService(typeof(OrdersMutation)) ?? throw new InvalidOperationException();
+
             FieldMiddleware.Use(new InstrumentFieldsMiddleware());
         }
     }

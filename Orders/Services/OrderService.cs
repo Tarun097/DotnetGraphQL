@@ -18,6 +18,16 @@ namespace Orders.Services
             _orders.Add(new Order("4000", "10 Posters", DateTime.Now.AddHours(2), 4, "2D542572-EF99-4786-AEB5-C997D82E57C7"));
         }
 
+        private Order GetById(string id) 
+        {
+            var order = _orders.SingleOrDefault(x => x.Id == id);
+            if (order == null)
+            {
+                throw new ArgumentException($"Order Id : {id} is invalid");
+            }
+            return order;
+        }
+
         public Task<Order> GetOrderByIdAsync(string id)
         {
             return Task.FromResult(_orders.Single(o => Equals(o.Id, id)));
@@ -27,11 +37,26 @@ namespace Orders.Services
         {
             return Task.FromResult(_orders.AsEnumerable());
         }
+
+        public Task<Order> CreateAsync(Order order)
+        {
+            _orders.Add(order);
+            return Task.FromResult(order);
+        }
+
+        public Task<Order> StartAsync(string orderId)
+        {
+            var order = GetById(orderId);
+            order.Start();
+            return Task.FromResult(order);
+        }
     }
 
     public interface IOrderService
     {
         Task<Order> GetOrderByIdAsync(string id);
         Task<IEnumerable<Order>> GetOrdersAsync();
+        Task<Order> CreateAsync(Order order);
+        Task<Order> StartAsync(string orderId);
     }
 }

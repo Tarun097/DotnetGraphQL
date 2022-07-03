@@ -21,7 +21,12 @@ namespace Orders.Models
         public DateTime Created { get; private set; }
         public int CustomerId { get; set; }
         public string Id { get; private set; }
-        public OrderStatuses Status { get; set; }
+        public OrderStatuses Status { get; private set; }
+
+        public void Start() 
+        {
+            Status = OrderStatuses.PROCESSING;
+        }
     }
 
     [Flags]
